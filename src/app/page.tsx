@@ -4,6 +4,8 @@ import { AboutStats } from '@/components/about/AboutStats';
 import { FocusSection } from '@/components/about/FocusSection';
 import { SkillsSection } from '@/components/skills/SkillsSection';
 
+import { ProjectsSection } from '@/components/projects/ProjectsSection';
+
 export default function Home() {
   return (
     <>
@@ -45,6 +47,9 @@ export default function Home() {
 
       {/* Skills Section */}
       <SkillsSection />
+
+      {/* Projects Section */}
+      <ProjectsSection />
     </>
   );
 }
