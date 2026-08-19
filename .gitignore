@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Graphify - local knowledge graph, not needed in repo
+graphify-out/
+.agents/
+
