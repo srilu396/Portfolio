@@ -10,9 +10,9 @@ export const ProjectGrid: React.FC<ProjectGridProps> = ({ projects }) => {
   return (
     <div className="w-full max-w-7xl mx-auto px-6 lg:px-8 relative z-10 pb-20">
       {projects.length > 0 ? (
-        <div className="flex overflow-x-auto gap-8 pb-10 snap-x snap-mandatory scrollbar-hide -mx-6 px-6 lg:mx-0 lg:px-0">
+        <div className="flex overflow-x-auto gap-6 py-6 snap-x snap-mandatory -mx-6 px-6 lg:mx-0 lg:px-6 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
           {projects.map((project) => (
-            <div key={project.id} className="min-w-[85vw] md:min-w-[45vw] lg:min-w-[30vw] snap-center shrink-0">
+            <div key={project.id} className="w-[85vw] md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] snap-start shrink-0">
               <ProjectCard project={project} />
             </div>
           ))}

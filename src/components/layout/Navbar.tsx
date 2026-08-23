@@ -27,7 +27,10 @@ export const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {portfolioData.navLinks.map((link) => {
-              const isActive = link.href === pathname;
+              // Special handling to keep "Projects" active on /projects/[slug] routes
+              const isProjectsLink = link.label === 'Projects' && pathname.startsWith('/projects');
+              const isActive = isProjectsLink || link.href === pathname;
+              
               return (
                 <Link
                   key={link.label}
@@ -51,7 +54,7 @@ export const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:flex">
             <Button variant="primary" className="py-2.5 px-5 text-sm">
-              Let's Connect &rarr;
+              Let&apos;s Connect &rarr;
             </Button>
           </div>
 
@@ -68,21 +71,26 @@ export const Navbar = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-[#05050A] border-b border-white/5 px-6 pt-2 pb-6 space-y-4">
-          {portfolioData.navLinks.map((link) => (
+          {portfolioData.navLinks.map((link) => {
+            const isProjectsLink = link.label === 'Projects' && pathname.startsWith('/projects');
+            const isActive = isProjectsLink || link.href === pathname;
+            
+            return (
             <Link
               key={link.label}
               href={link.href}
               className={`block text-lg font-medium ${
-                link.href === pathname ? 'text-violet-400' : 'text-gray-300'
+                isActive ? 'text-violet-400' : 'text-gray-300'
               }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.label}
             </Link>
-          ))}
+            );
+          })}
           <div className="pt-4">
             <Button variant="primary" className="w-full">
-              Let's Connect &rarr;
+              Let&apos;s Connect &rarr;
             </Button>
           </div>
         </div>

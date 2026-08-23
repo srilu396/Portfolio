@@ -2,7 +2,6 @@ import React from 'react';
 import { portfolioData } from '@/data/portfolio';
 import { Button } from '@/components/ui/Button';
 import { SocialLinks } from './SocialLinks';
-import { HeroVisual } from './HeroVisual';
 import { ScrollIndicator } from './ScrollIndicator';
 import { ArrowRight } from 'lucide-react';
 
@@ -17,11 +16,11 @@ export const Hero = () => {
         {/* Text & CTAs */}
         <div className="flex flex-col items-start max-w-2xl">
           <p className="text-violet-400 font-medium text-lg lg:text-xl tracking-wide mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">
-            Hi, I'm
+            Hi, I&apos;m
           </p>
           
           <h1 className="text-5xl lg:text-7xl font-bold tracking-tight text-white mb-2 leading-[1.1] opacity-0 animate-[fadeIn_1s_ease-out_0.2s_forwards]">
-            Full Stack
+            Web
           </h1>
           
           <h1 className="text-5xl lg:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-fuchsia-500 mb-6 leading-[1.1] opacity-0 animate-[fadeIn_1s_ease-out_0.4s_forwards]">

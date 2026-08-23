@@ -8,9 +8,9 @@ import { projects, ProjectCategory } from '@/data/projects';
 
 const CATEGORIES: ProjectCategory[] = [
   'All Projects',
-  'Full-Stack Web',
-  'AI / ML',
-  'UI/UX Design'
+  'Full Stack',
+  'Machine Learning',
+  'Figma Design'
 ];
 
 export default function ProjectsPage() {

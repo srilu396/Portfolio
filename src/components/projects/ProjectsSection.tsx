@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { ProjectsHero } from '@/components/projects/ProjectsHero';
 import { ProjectsFilter } from '@/components/projects/ProjectsFilter';
 import { ProjectGrid } from '@/components/projects/ProjectGrid';
@@ -8,9 +9,9 @@ import { projects, ProjectCategory } from '@/data/projects';
 
 const CATEGORIES: ProjectCategory[] = [
   'All Projects',
-  'Full-Stack Web',
-  'AI / ML',
-  'UI/UX Design'
+  'Full Stack',
+  'Machine Learning',
+  'Figma Design'
 ];
 
 export const ProjectsSection = () => {
@@ -24,7 +25,19 @@ export const ProjectsSection = () => {
   return (
     <section id="projects" className="min-h-screen relative overflow-hidden bg-[#05050A]">
       {/* Decorative Background */}
-      <div className="absolute inset-0 z-0 pointer-events-none">
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        
+        {/* Large background image (Top Right) */}
+        <div className="absolute top-0 right-4 lg:right-16 w-[300px] h-[300px] md:w-[500px] md:h-[500px] opacity-100 pointer-events-none">
+          <Image
+            src="/images/project.png"
+            alt="Projects Decoration"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
+
         {/* Top left subtle glow */}
         <div className="absolute top-0 left-0 w-[800px] h-[800px] bg-violet-900/10 rounded-full blur-[120px] mix-blend-screen transform -translate-x-1/2 -translate-y-1/2 animate-pulse-glow" />
         
