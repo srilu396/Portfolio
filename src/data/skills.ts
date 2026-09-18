@@ -64,7 +64,9 @@ export const skillsData: SkillCategory[] = [
       { name: 'MySQL', icon: 'sql' },
       { name: 'Supabase', icon: 'supabase' },
       { name: 'Database Design', icon: 'database-design' },
-      { name: 'Data Modeling', icon: 'data-modeling' }
+      { name: 'Data Modeling', icon: 'data-modeling' },
+      { name: 'Power BI', icon: 'power-bi' },
+      { name: 'Microsoft Excel', icon: 'excel' }
     ],
   },
   {
@@ -102,7 +104,8 @@ export const skillsData: SkillCategory[] = [
       { name: 'Figma', icon: 'figma' },
       { name: 'Vercel', icon: 'vercel' },
       { name: 'Render', icon: 'render' },
-      { name: 'Supabase', icon: 'supabase' }
+      { name: 'Supabase', icon: 'supabase' },
+      { name: 'Google Console', icon: 'google-console' }
     ],
   },
   {

@@ -1,4 +1,4 @@
-export type ProjectCategory = 'All Projects' | 'Full Stack' | 'Machine Learning' | 'Figma Design';
+export type ProjectCategory = 'All Projects' | 'Full Stack' | 'Machine Learning' | 'Figma Design' | 'Power BI';
 
 export interface ProjectCredential {
   role: string;
@@ -703,6 +703,50 @@ export const projects: Project[] = [
     ],
     links: {
       figmaUrl: 'https://www.figma.com/design/rc0YwSsv7i5VgkkdFgFLvY/TravelWebsite?node-id=0-1&t=anbRQZwmjpPytiZg-1',
+    },
+    featured: true,
+  },
+  // ─────────────────────────────────────────────
+  // POWER BI PROJECTS
+  // ─────────────────────────────────────────────
+  {
+    id: '11',
+    slug: 'sales-revenue-analysis-dashboard',
+    title: 'Sales & Revenue Analysis Dashboard',
+    description: 'Interactive Power BI dashboard for analyzing sales performance, revenue trends, product performance, and category-level insights using Power Query and DAX.',
+    category: 'Power BI',
+    projectType: 'Data Analysis Project',
+    role: 'Data Analyst',
+    images: [
+      '/images/projects/power-bi/sales-revenue-analysis-dashboard/image1.png',
+      '/images/projects/power-bi/sales-revenue-analysis-dashboard/image2.png',
+      '/images/projects/power-bi/sales-revenue-analysis-dashboard/image3.png'
+    ],
+    technologies: [
+      { name: 'Microsoft Power BI', icon: '/icons/skills/power-bi.webp' },
+      { name: 'Power Query', icon: '/icons/skills/power-query.png' },
+      { name: 'DAX', icon: '/icons/skills/dax.webp' },
+      { name: 'Data Modeling', icon: '/icons/skills/data-modeling.png' },
+      { name: 'Data Visualization', icon: '/icons/skills/data-visualization.svg' },
+      { name: 'Microsoft Excel', icon: '/icons/skills/excel.webp' },
+    ],
+    features: [
+      'Sales & Revenue KPI Analysis',
+      'Revenue by Category',
+      'Monthly Revenue Trends',
+      'Top Product Analysis',
+      'Interactive Filters & Slicers',
+      'DAX-Based Metrics',
+    ],
+    learnings: [
+      'Power Query',
+      'DAX',
+      'Data Modeling',
+      'Data Visualization',
+      'Business Analysis',
+    ],
+    links: {
+      githubUrl: 'https://github.com/srilu396/sales-revenue-analysis-powerbi'
     },
     featured: true,
   },

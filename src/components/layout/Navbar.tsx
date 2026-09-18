@@ -125,7 +125,7 @@ export const Navbar = () => {
           {/* Resume CTA Button */}
           <div className="hidden md:flex">
             <a
-              href={portfolioData.resumeUrl || '/resume.pdf'}
+              href={portfolioData.resumeUrl || '/Resume.pdf'}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -170,7 +170,7 @@ export const Navbar = () => {
           })}
           <div className="pt-4">
             <a
-              href={portfolioData.resumeUrl || '/resume.pdf'}
+              href={portfolioData.resumeUrl || '/Resume.pdf'}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}

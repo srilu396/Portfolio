@@ -24,6 +24,8 @@ export const skillIcons: Record<string, string> = {
   supabase: "/icons/skills/supabase.svg",
   "database-design": "/icons/skills/database-design.svg",
   "data-modeling": "/icons/skills/data-modeling.png",
+  "power-bi": "/icons/skills/power-bi.webp",
+  "excel": "/icons/skills/excel.webp",
 
   // Programming Languages
   python: "/icons/skills/python.png",
@@ -40,6 +42,7 @@ export const skillIcons: Record<string, string> = {
   figma: "/icons/skills/figma.svg",
   vercel: "/icons/skills/vercel.webp",
   render: "/icons/skills/render.webp",
+  "google-console": "/icons/skills/google-console.webp",
 
   // Development Practices
   "clean-code": "/icons/skills/clean-code.png",

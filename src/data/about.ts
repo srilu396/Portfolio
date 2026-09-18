@@ -1,4 +1,12 @@
-import { Calendar, Code2, Layers, PenTool, Target, Server, Database, Smartphone } from 'lucide-react';
+import { Calendar, Code2, Layers, Target, Server, Database, Smartphone } from 'lucide-react';
+
+export const education = {
+  degree: "B.Tech in CSE (Artificial Intelligence & Data Science)",
+  institution: "Kakinada Institute of Engineering and Technology for Women",
+  location: "Korangi,",
+  cgpa: "8.39",
+  period: "2022 – 2026",
+};
 
 export const aboutStats = [
   {

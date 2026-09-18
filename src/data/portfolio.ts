@@ -1,8 +1,8 @@
 export const portfolioData = {
   name: "Srilu",
-  role: "Web Developer",
+  role: "Full Stack Developer",
   description: "Building modern web experiences with code, design, and emerging AI technologies.",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/Resume.pdf",
   navLinks: [
     { label: "Home", href: "/" },
     { label: "About", href: "/#about" },

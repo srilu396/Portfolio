@@ -11,7 +11,8 @@ const CATEGORIES: ProjectCategory[] = [
   'All Projects',
   'Full Stack',
   'Machine Learning',
-  'Figma Design'
+  'Figma Design',
+  'Power BI'
 ];
 
 export const ProjectsSection = () => {

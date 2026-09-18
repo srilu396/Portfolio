@@ -71,17 +71,6 @@ export const ExperienceDetail = ({
           </div>
 
           <div className="flex flex-col items-end gap-3 shrink-0">
-            {onBack && (
-              <button
-                type="button"
-                onClick={onBack}
-                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-medium text-gray-300 hover:text-white border border-white/10 hover:border-violet-500/40 transition-all cursor-pointer"
-              >
-                <ArrowLeft className="w-3.5 h-3.5" />
-                Back to Experience
-              </button>
-            )}
-
             {/* Top Right Logo / Icon */}
             {experience.logo ? (
               <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white p-1.5 flex items-center justify-center shadow-md border border-white/15 overflow-hidden">

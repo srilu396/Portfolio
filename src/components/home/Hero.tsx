@@ -23,7 +23,7 @@ export const Hero = () => {
           </p>
           
           <h1 className="text-5xl lg:text-7xl font-bold tracking-tight text-white mb-2 leading-[1.1] opacity-0 animate-[fadeIn_1s_ease-out_0.2s_forwards]">
-            Web
+            Full Stack
           </h1>
           
           <h1 className="text-5xl lg:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-fuchsia-500 mb-6 leading-[1.1] opacity-0 animate-[fadeIn_1s_ease-out_0.4s_forwards]">
