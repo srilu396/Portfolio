@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar } from './Navbar';
+import { Footer } from './Footer';
 
 export const SiteLayout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -8,6 +9,7 @@ export const SiteLayout = ({ children }: { children: React.ReactNode }) => {
       <main className="flex-grow flex flex-col relative z-10 pt-20">
         {children}
       </main>
+      <Footer />
     </div>
   );
 };

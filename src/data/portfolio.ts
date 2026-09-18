@@ -2,6 +2,7 @@ export const portfolioData = {
   name: "Srilu",
   role: "Web Developer",
   description: "Building modern web experiences with code, design, and emerging AI technologies.",
+  resumeUrl: "/resume.pdf",
   navLinks: [
     { label: "Home", href: "/" },
     { label: "About", href: "/#about" },
@@ -13,6 +14,6 @@ export const portfolioData = {
   socialLinks: [
     { label: "GitHub", href: "https://github.com/srilu396", icon: "github" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/sri-vijaya-lakshmi-nagulapalli-15a63a288/", icon: "linkedin" },
-    { label: "Email", href: "srilunagulapalli396@gmail.com", icon: "mail" },
+    { label: "Email", href: "mailto:srilunagulapalli396@gmail.com", icon: "mail" },
   ],
 };

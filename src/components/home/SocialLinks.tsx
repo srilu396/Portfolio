@@ -23,20 +23,23 @@ const iconMap: Record<string, React.ReactNode> = {
 export const SocialLinks = () => {
   return (
     <div className="flex items-center gap-4">
-      {portfolioData.socialLinks.map((link) => (
-        <a
-          key={link.label}
-          href={link.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center w-12 h-12 rounded-xl border border-white/10 bg-white/5 text-gray-300 hover:text-violet-400 hover:border-violet-500/50 hover:bg-violet-500/10 transition-all duration-300 group"
-          aria-label={link.label}
-        >
-          <div className="group-hover:-translate-y-0.5 transition-transform duration-300">
-            {iconMap[link.icon]}
-          </div>
-        </a>
-      ))}
+      {portfolioData.socialLinks.map((link) => {
+        const isMail = link.href.startsWith('mailto:');
+        return (
+          <a
+            key={link.label}
+            href={link.href}
+            target={isMail ? undefined : '_blank'}
+            rel={isMail ? undefined : 'noopener noreferrer'}
+            className="flex items-center justify-center w-12 h-12 rounded-xl border border-white/10 bg-white/5 text-gray-300 hover:text-violet-400 hover:border-violet-500/50 hover:bg-violet-500/10 transition-all duration-300 group"
+            aria-label={link.label}
+          >
+            <div className="group-hover:-translate-y-0.5 transition-transform duration-300">
+              {iconMap[link.icon]}
+            </div>
+          </a>
+        );
+      })}
     </div>
   );
 };
