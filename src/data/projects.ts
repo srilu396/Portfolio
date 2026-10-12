@@ -278,8 +278,8 @@ export const projects: Project[] = [
       'Collaborating on a larger application architecture'
     ],
     links: {
-      liveUrl: 'https://platform-course.vercel.app/',
-      githubUrl: 'https://github.com/Anil-transetu/platform_course'
+      liveUrl: 'https://lms-frontend-juqhfhzko-srilus-projects.vercel.app/',
+      githubUrl: 'https://github.com/srilu396/LMS_Frontend'
     },
     credentials: [
       {
